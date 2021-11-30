@@ -1,6 +1,6 @@
 My Money [(Problem Link)](https://www.geektrust.in/coding-problem/backend/mymoney)
-`
-`: # Stack
+
+# Stack
 
 - Ruby 2.7.1
 
@@ -11,11 +11,6 @@ You work at ‘MyMoney’, a platform that lets investors track their consolidat
 Portfolio rebalancing is an activity done to reduce the gains from one asset class and investing them in another, to ensure that the desired weight for each asset class doesn't deviate because of market gains/losses.
 
 If we consider an investor who has invested in an equity fund, a debt/gilt fund, and gold, over the course of 5 years, with a desired weight of 60%, 30% and 10%, without rebalancing, the portfolio would look like this:
-
-
-| Master | Staging | Production |
-|--------|---------|------------|
-| A | B | C |
 
 | | Equity | Debt | Gold | Total |
 |-|--------|------|------|-------|
