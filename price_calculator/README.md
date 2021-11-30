@@ -55,5 +55,5 @@ You saved $3.45 today.
 ### Command to run:
 
 ```bash
-ruby price_calculator/solution.rb
+ruby solution.rb
 ```

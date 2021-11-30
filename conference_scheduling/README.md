@@ -85,5 +85,5 @@ Track 2
 ### Command to run:
 
 ```bash
-ruby conference_scheduling/solution.rb
+ruby solution.rb
 ```
