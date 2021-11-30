@@ -11,7 +11,6 @@ The task is to build a ruby program which when executed would ask the user to li
 
 ## Problem Statement:
 
-Build 
 At the local grocery store items are sold by quantity. For example, Milk costs $3.97. However, sometimes there is a sale and then consumers can buy n items for the price of one.
 
 If the pricing table at the local grocery store for a week looks like this:
