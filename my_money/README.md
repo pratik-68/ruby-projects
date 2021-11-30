@@ -12,7 +12,7 @@ Portfolio rebalancing is an activity done to reduce the gains from one asset cla
 
 If we consider an investor who has invested in an equity fund, a debt/gilt fund, and gold, over the course of 5 years, with a desired weight of 60%, 30% and 10%, without rebalancing, the portfolio would look like this:
 
-|							|  Equity	 	|  Debt			|		Gold	 	|	 Total	 	|
+|	Operation		|  Equity	 	|  Debt			|		Gold	 	|	 Total	 	|
 |-------------|-----------|-----------|-----------|-----------|
 | Dec-05 		 	| 6,00,000	| 3,00,000 	| 1,00,000 	| 10,00,000 |
 | Allocation	| 60% 			| 30% 			| 10% 			| 100% 			|
@@ -29,9 +29,10 @@ It’s clear that due to changing markets, the desired allocation has deviated.
 You need to design a system that will suggest actions to ensure that the desired allocation
 percentages are equal to the actual percentages invested. The desired allocation percentage
 should be derived from the initial allocation made. If 5000, 2000, 3000 is initial
-allocation, then desired percentage is 50%, 20% and 30%. The rebalanced portfolio would look
-like this:
-|														|  Equity	 	|  Debt			|		Gold	 	|	 Total	 	|
+allocation, then desired percentage is 50%, 20% and 30%. 
+
+The rebalanced portfolio would look like this:
+|	Operation									|  Equity	 	|  Debt			|		Gold	 	|	 Total	 	|
 |---------------------------|-----------|-----------|-----------|-----------|
 | Dec-05 										| 6,00,000	| 3,00,000	| 1,00,000	| 10,00,000	|
 |	Allocation								|	60%				|	30%				|	10%				|	100%			|
@@ -133,28 +134,29 @@ REBALANCE
 OUTPUT:
 10593 7897 2272
 23619 11809 3936
+```
 
 Portfolio (for reference):
-Operation	Equity	Debt	Gold	Total
-JANUARY - Allocation	6000	3000	1000	10000
-JANUARY - After Market Change	6240	3300	1020	10560
-FEBRUARY - Existing	6240	3300	1020	10560
-FEBRUARY - After SIP	8240	4300	1520	14060
-FEBRUARY - After Market Change	7416	6020	1520	14956
-MARCH - Existing	7416	6020	1520	14956
-MARCH - After SIP	9416	7020	2020	18456
-MARCH - After Market Change	10593	7897	2272	20762
-APRIL - Existing	10593	7897	2272	20762
-APRIL - After SIP	12593	8897	2772	24262
-APRIL - After Market Change	13600	8630	2966	25196
-MAY - Existing	13600	8630	2966	25196
-MAY - After SIP	15600	9630	3466	28696
-MAY - After Market Change	17628	11652	3829	33109
-JUNE - Existing	17628	11652	3829	33109
-JUNE - After SIP	19628	12652	4329	36609
-JUNE - After Market Change	21590	13664	4112	39366
-JUNE - Rebalance	23619	11809	3936	39366
-```
+|	Operation												|  Equity	| Debt	|	Gold	|	Total	|
+|---------------------------------|---------|-------|-------|-------|
+| JANUARY - Allocation		 				|	6000		|	3000	|	1000	| 10000	|
+| JANUARY - After Market Change		|	6240		|	3300	|	1020	| 10560	|
+| FEBRUARY - Existing							|	6240		|	3300	|	1020	| 10560	|
+| FEBRUARY - After SIP						|	8240		|	4300	|	1520	| 14060	|
+| FEBRUARY - After Market Change	|	7416		|	6020	|	1520	| 14956	|
+| MARCH - Existing								|	7416		|	6020	|	1520	| 14956	|
+| MARCH - After SIP								|	9416		|	7020	|	2020	| 18456	|
+| MARCH - After Market Change			|	10593		|	7897	|	2272	| 20762	|
+| APRIL - Existing								|	10593		|	7897	|	2272	| 20762	|
+| APRIL - After SIP								|	12593		|	8897	|	2772	| 24262	|
+| APRIL - After Market Change			|	13600		|	8630	|	2966	| 25196	|
+| MAY - Existing									|	13600		|	8630	|	2966	| 25196	|
+| MAY - After SIP									|	15600		|	9630	|	3466	| 28696	|
+| MAY - After Market Change				|	17628		|	11652	|	3829	| 33109	|
+| JUNE - Existing									|	17628		|	11652	|	3829	| 33109	|
+| JUNE - After SIP								|	19628		|	12652	|	4329	| 36609	|
+| JUNE - After Market Change			|	21590		|	13664	|	4112	| 39366	|
+| JUNE - Rebalance								|	23619		|	11809	|	3936	| 39366	|
 
 ### SAMPLE INPUT-OUTPUT 2
 
@@ -174,18 +176,19 @@ OUTPUT:
 15937 14552 6187
 23292 16055 7690
 CANNOT_REBALANCE
+```
 
 Portfolio (for reference):
-Operation	Equity	Debt	Gold	Total
-JANUARY - Allocation	8000	6000	3500	17500
-JANUARY - After Market Change	8880	6540	3640	19060
-FEBRUARY - Existing	8880	6540	3640	19060
-FEBRUARY - After SIP	11880	8540	4640	25060
-FEBRUARY - After Market Change	11167	10333	4500	26000
-MARCH - Existing	11167	10333	4500	26000
-MARCH - After SIP	14167	12333	5500	32000
-MARCH - After Market Change	15937	14552	6187	36676
-APRIL - Existing	15937	14552	6187	36676
-APRIL - After SIP	18937	16552	7187	42676
-APRIL - After Market Change	23292	16055	7690	47037
-```
+|	Operation												| Equity	|  Debt	|	Gold	|	Total	|
+|---------------------------------|---------|-------|-------|-------|
+| JANUARY - Allocation						|	8000		| 6000	|	3500	|	17500	|
+| JANUARY - After Market Change		|	8880		| 6540	|	3640	|	19060	|
+| FEBRUARY - Existing							|	8880		| 6540	|	3640	|	19060	|
+| FEBRUARY - After SIP						|	11880		| 8540	|	4640	|	25060	|
+| FEBRUARY - After Market Change	|	11167		| 10333	|	4500	|	26000	|
+| MARCH - Existing								|	11167		| 10333	|	4500	|	26000	|
+| MARCH - After SIP								|	14167		| 12333	|	5500	|	32000	|
+| MARCH - After Market Change			|	15937		| 14552	|	6187	|	36676	|
+| APRIL - Existing								|	15937		| 14552	|	6187	|	36676	|
+| APRIL - After SIP								|	18937		| 16552	|	7187	|	42676	|
+| APRIL - After Market Change			|	23292		| 16055	|	7690	|	47037	|
