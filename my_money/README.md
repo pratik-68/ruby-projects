@@ -1,7 +1,6 @@
-My Money [Link](https://www.geektrust.in/coding-problem/backend/mymoney)
-========================================================================
-
-## Stack
+My Money [(Problem Link)](https://www.geektrust.in/coding-problem/backend/mymoney)
+`
+`: # Stack
 
 - Ruby 2.7.1
 
@@ -13,8 +12,13 @@ Portfolio rebalancing is an activity done to reduce the gains from one asset cla
 
 If we consider an investor who has invested in an equity fund, a debt/gilt fund, and gold, over the course of 5 years, with a desired weight of 60%, 30% and 10%, without rebalancing, the portfolio would look like this:
 
-|| Equity | Debt | Gold | Total |
-||--------|------|------|-------|
+
+| Master | Staging | Production |
+|--------|---------|------------|
+| A | B | C |
+
+| | Equity | Debt | Gold | Total |
+|-|--------|------|------|-------|
 | Dec-05 | 6,00,000 | 3,00,000 | 1,00,000 | 10,00,000 |
 | Allocation | 60% | 30% | 10% | 100% |
 | Dec-06 | 8,51,584 | 3,13,305 | 1,19,384 | 12,84,836 |
@@ -61,7 +65,7 @@ Dec-09	                  14,51,396	3,56,116	1,70,011	19,77,523
 ruby solution.rb
 ```
 
-## Input
+## Input:
 
 ```bash
 1. The money allocated in equity, debt and gold funds.
@@ -69,44 +73,31 @@ ruby solution.rb
 3. Monthly change rate (loss or growth) for each type of fund.
 ```
 
-### Input Commands
+### Input Commands:
 
 There are 5 input commands defined to separate out the actions. Your input format will start with either of these commands i.e ALLOCATE, SIP, CHANGE, BALANCE, REBALANCE
 
-#### ALLOCATE
-
-The ALLOCATE command receives the initial investment amounts for each fund.
-
+```bash
+`ALLOCATE`: The ALLOCATE command receives the initial investment amounts for each fund.
 Format - ALLOCATE AMOUNT_EQUITY AMOUNT_DEBT AMOUNT_GOLD
 Example - ALLOCATE 6000 3000 1000 means that an amount of 6000, 3000 and 1000 is initially invested in equity, debt and gold fund respectively.
 
-#### SIP
-
-The SIP command receives the investment amount on a monthly basis for each fund.
-
+`SIP`: The SIP command receives the investment amount on a monthly basis for each fund.
 Format - SIP AMOUNT_EQUITY AMOUNT_DEBT AMOUNT_GOLD
 Example - SIP 2000 1000 500 means a monthly payment of 2000, 1000 and 500 is done against each of equity, debt and gold funds respectivelty.
 
-#### CHANGE
-
-The CHANGE command receives the monthly rate of change (growth or loss) for each fund type. A negative value represents a loss.
-
+`CHANGE`: The CHANGE command receives the monthly rate of change (growth or loss) for each fund type. A negative value represents a loss.
 Format - CHANGE AMOUNT_EQUITY AMOUNT_DEBT AMOUNT_GOLD MONTH
 Example - CHANGE 8.00% -3.00% 7.00% APRIL means in the month of April equity received a growth of 8%, debt has taken a loss by 3% and gold received a growth of 7%.
 
-#### BALANCE
-
-The BALANCE command receives a month name.
-
+`BALANCE`: The BALANCE command receives a month name.
 Format - BALANCE MONTH
 Example - BALANCE APRIL means - print the balance for each fund as on April month.
 
-#### REBALANCE
-
-The REBALANCE command receives no additional inputs.
-
+`REBALANCE`: The REBALANCE command receives no additional inputs.
 Input format - REBALANCE
 Example - REBALANCE - Rebalance happens compulsorily after 6 months in June and December. The REBALANCE command shows the last rebalanced amount for each fund at the time of rebalancing. If 6 months data is not available then print CANNOT_REBALANCE.
+```
 
 ## Assumptions
 
@@ -123,9 +114,10 @@ Example - REBALANCE - Rebalance happens compulsorily after 6 months in June and 
 
 ### Output Format:
 
+```bash
 EQUITY DEBT GOLD
 Example - 10593 7898 2273
-
+```
 
 ## Examples:
 
