@@ -6,7 +6,7 @@ My Money [(Problem Link)](https://www.geektrust.in/coding-problem/backend/mymone
 
 ## Problem Statement:
 
-You work at ‘MyMoney’, a platform that lets investors track their consolidated portfolio value across equity, debt, and gold.
+You work at `MyMoney`, a platform that lets investors track their consolidated portfolio value across equity, debt, and gold.
 
 Portfolio rebalancing is an activity done to reduce the gains from one asset class and investing them in another, to ensure that the desired weight for each asset class doesn't deviate because of market gains/losses.
 
@@ -32,8 +32,9 @@ should be derived from the initial allocation made. If 5000, 2000, 3000 is initi
 allocation, then desired percentage is 50%, 20% and 30%. The rebalanced portfolio would look
 like this:
 ```bash
-	                        Equity	    Debt	      Gold	      Total
-Dec-05	                  6,00,000	  3,00,000	  1,00,000	  10,00,000
+| | Equity | Debt | Gold | Total |
+|-|--------|------|------|-------|
+| Dec-05 |	                  6,00,000|	  3,00,000|	  1,00,000|	  10,00,000|
 Allocation	              60%	        30%	        10%	        100%
 
 Dec-06	                  8,51,584	  3,13,305	  1,19,384	  12,84,836
