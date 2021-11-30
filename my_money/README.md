@@ -94,12 +94,6 @@ Input format - REBALANCE
 Example - REBALANCE - Rebalance happens compulsorily after 6 months in June and December. The REBALANCE command shows the last rebalanced amount for each fund at the time of rebalancing. If 6 months data is not available then print CANNOT_REBALANCE.
 ```
 
-## Assumptions
-
-1. Balances are always floored to the nearest integers.
-2. The rebalancing happens on 6th (June) and 12th (December) month.
-3. The allocation always happens from January, and SIP from February.
-
 ## Output:
 
 ```bash
@@ -113,6 +107,12 @@ Example - REBALANCE - Rebalance happens compulsorily after 6 months in June and 
 EQUITY DEBT GOLD
 Example - 10593 7898 2273
 ```
+
+## Assumptions
+
+1. Balances are always floored to the nearest integers.
+2. The rebalancing happens on 6th (June) and 12th (December) month.
+3. The allocation always happens from January, and SIP from February.
 
 ## Examples:
 
