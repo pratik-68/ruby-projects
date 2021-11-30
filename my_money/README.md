@@ -31,7 +31,6 @@ percentages are equal to the actual percentages invested. The desired allocation
 should be derived from the initial allocation made. If 5000, 2000, 3000 is initial
 allocation, then desired percentage is 50%, 20% and 30%. The rebalanced portfolio would look
 like this:
-```bash
 | | Equity | Debt | Gold | Total |
 |-|--------|------|------|-------|
 | Dec-05 |	                  6,00,000|	  3,00,000|	  1,00,000|	  10,00,000|
@@ -53,7 +52,6 @@ Dec-08 (Post Rebalancing)	8,22,894	4,11,447	1,37,149	13,71,490
 Allocation	              60%	30%	10%	100%
 
 Dec-09	                  14,51,396	3,56,116	1,70,011	19,77,523
-```
 
 ### Command to run:
 
